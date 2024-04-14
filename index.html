@@ -1,0 +1,37 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Function Manager</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Create Functions</h2>
+        <input type="text" id="functionName" placeholder="Function Name"><br><br>
+        <select id="functionType">
+            <option value="helloWorld">Hello World</option>
+            <option value="greet">Greet</option>
+            <option value="square">Square</option>
+            <option value="multiply">Multiply</option>
+        </select><br><br>
+        <button onclick="createFunction()">Create Function</button>
+    </div>
+    <div class="main">
+        <h2>Function Manager</h2>
+        <div id="functionList">
+            <!-- Function list will be populated dynamically -->
+        </div>
+        <button onclick="runFunction()">Run</button>
+    </div>
+</div>
+
+<script src="functions.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
